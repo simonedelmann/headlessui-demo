@@ -1,23 +1,23 @@
-import { Listbox, ListboxOption, ListboxLabel } from './Listbox'
+import { Listbox, ListboxOption } from './Listbox'
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-300 flex items-center justify-center">
+    <div className="min-h-screen flex items-center justify-center">
       <div className="bg-white p-8 relative">
-      <Listbox name="status" defaultValue="active">
-        <ListboxOption value="active">
-          <ListboxLabel>Active</ListboxLabel>
-        </ListboxOption>
-        <ListboxOption value="paused">
-          <ListboxLabel>Paused</ListboxLabel>
-        </ListboxOption>
-        <ListboxOption value="delayed">
-          <ListboxLabel>Delayed</ListboxLabel>
-        </ListboxOption>
-        <ListboxOption value="canceled">
-          <ListboxLabel>Canceled</ListboxLabel>
-        </ListboxOption>
-      </Listbox>
+        <Listbox name="status" defaultValue="active">
+          <ListboxOption value="active">
+            Click me
+          </ListboxOption>
+          <ListboxOption value="paused">
+            Paused
+          </ListboxOption>
+          <ListboxOption value="delayed">
+            Delayed
+          </ListboxOption>
+          <ListboxOption value="canceled">
+            Canceled
+          </ListboxOption>
+        </Listbox>
       </div>
     </div>
   )
